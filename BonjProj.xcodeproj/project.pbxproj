@@ -16,6 +16,8 @@
 		211A400417CCDC6100EC38A3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 211A400317CCDC6100EC38A3 /* Default.png */; };
 		211A400617CCDC6100EC38A3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 211A400517CCDC6100EC38A3 /* Default@2x.png */; };
 		211A400817CCDC6100EC38A3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 211A400717CCDC6100EC38A3 /* Default-568h@2x.png */; };
+		211A401117CCDC8500EC38A3 /* TableViewBonjourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211A400F17CCDC8500EC38A3 /* TableViewBonjourViewController.m */; };
+		211A401217CCDC8500EC38A3 /* TableViewBonjourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 211A401017CCDC8500EC38A3 /* TableViewBonjourViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		211A400317CCDC6100EC38A3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		211A400517CCDC6100EC38A3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		211A400717CCDC6100EC38A3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		211A400E17CCDC8500EC38A3 /* TableViewBonjourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewBonjourViewController.h; sourceTree = "<group>"; };
+		211A400F17CCDC8500EC38A3 /* TableViewBonjourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewBonjourViewController.m; sourceTree = "<group>"; };
+		211A401017CCDC8500EC38A3 /* TableViewBonjourViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewBonjourViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,9 @@
 		211A3FE517CCDC6000EC38A3 = {
 			isa = PBXGroup;
 			children = (
+				211A400E17CCDC8500EC38A3 /* TableViewBonjourViewController.h */,
+				211A400F17CCDC8500EC38A3 /* TableViewBonjourViewController.m */,
+				211A401017CCDC8500EC38A3 /* TableViewBonjourViewController.xib */,
 				211A3FF717CCDC6100EC38A3 /* BonjProj */,
 				211A3FF017CCDC6000EC38A3 /* Frameworks */,
 				211A3FEF17CCDC6000EC38A3 /* Products */,
@@ -155,6 +163,7 @@
 				211A400417CCDC6100EC38A3 /* Default.png in Resources */,
 				211A400617CCDC6100EC38A3 /* Default@2x.png in Resources */,
 				211A400817CCDC6100EC38A3 /* Default-568h@2x.png in Resources */,
+				211A401217CCDC8500EC38A3 /* TableViewBonjourViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +176,7 @@
 			files = (
 				211A3FFE17CCDC6100EC38A3 /* main.m in Sources */,
 				211A400217CCDC6100EC38A3 /* NuncAppDelegate.m in Sources */,
+				211A401117CCDC8500EC38A3 /* TableViewBonjourViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

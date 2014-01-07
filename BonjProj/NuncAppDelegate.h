@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NuncAppDelegate : UIResponder <UIApplicationDelegate>
-
+@interface NuncAppDelegate : UIResponder <UIApplicationDelegate,NSNetServiceBrowserDelegate>
+{
+    NSMutableArray	*_foundServices;
+    
+}
 @property (strong, nonatomic) UIWindow *window;
 
 @end

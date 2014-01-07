@@ -2,8 +2,8 @@
 //  NuncAppDelegate.m
 //  BonjProj
 //
-//  Created by nunc03 on 8/27/13.
-//  Copyright (c) 2013 nunc03. All rights reserved.
+//  Created by Mithun on 8/27/13.
+//  Copyright (c) 2013 Mithun. All rights reserved.
 //
 
 #import "NuncAppDelegate.h"
@@ -16,6 +16,11 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+   NSNetServiceBrowser *_browser = [[NSNetServiceBrowser alloc] init];
+	_browser.delegate = self;
+	[_browser searchForServicesOfType:@"_sampleservice._tcp" inDomain:@""];
+    //App Delegate 
+    
     return YES;
 }
 
@@ -44,6 +49,28 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+#pragma mark NSNetServiceBrowserDelegate
+
+- (void)netServiceBrowser:(NSNetServiceBrowser *)netServiceBrowser didFindService:(NSNetService *)netService moreComing:(BOOL)moreServicesComing
+{
+	NSLog(@"found service %@", netService);
+	if (!_foundServices)
+		_foundServices = [[NSMutableArray alloc] init];
+	
+	[_foundServices addObject:netService];
+	
+//	[self.tableView reloadData];
+}
+
+- (void)netServiceBrowser:(NSNetServiceBrowser *)netServiceBrowser didRemoveService:(NSNetService *)netService moreComing:(BOOL)moreServicesComing
+{
+	[_foundServices removeObject:netService];
+}
+
+- (void)netServiceBrowserDidStopSearch:(NSNetServiceBrowser *)aNetServiceBrowser
+{
+	[_foundServices removeAllObjects];
 }
 
 @end
