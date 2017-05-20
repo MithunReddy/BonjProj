@@ -19,6 +19,8 @@
    NSNetServiceBrowser *_browser = [[NSNetServiceBrowser alloc] init];
 	_browser.delegate = self;
 	[_browser searchForServicesOfType:@"_sampleservice._tcp" inDomain:@""];
+    
+    NSLog(@"Added comments ");
     //App Delegate 
     
     return YES;
