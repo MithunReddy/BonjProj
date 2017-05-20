@@ -20,7 +20,7 @@
 	_browser.delegate = self;
 	[_browser searchForServicesOfType:@"_sampleservice._tcp" inDomain:@""];
     
-    NSLog(@"Added comments ");
+    //NSLog(@"Added comments ");
     //App Delegate 
     
     return YES;
