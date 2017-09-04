@@ -136,6 +136,11 @@
 				CLASSPREFIX = Nunc;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = nunc03;
+				TargetAttributes = {
+					211A3FED17CCDC6000EC38A3 = {
+						DevelopmentTeam = Z62AM24ML2;
+					};
+				};
 			};
 			buildConfigurationList = 211A3FE917CCDC6000EC38A3 /* Build configuration list for PBXProject "BonjProj" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -253,9 +258,11 @@
 		211A400C17CCDC6100EC38A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Z62AM24ML2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BonjProj/BonjProj-Prefix.pch";
 				INFOPLIST_FILE = "BonjProj/BonjProj-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsecure.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -264,9 +271,11 @@
 		211A400D17CCDC6100EC38A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Z62AM24ML2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BonjProj/BonjProj-Prefix.pch";
 				INFOPLIST_FILE = "BonjProj/BonjProj-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsecure.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -291,6 +300,7 @@
 				211A400D17CCDC6100EC38A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
